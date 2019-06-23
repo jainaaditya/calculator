@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function myfun()
+		{
+			var t1=document.getElementById("n1").value;
+			var t2=document.getElementById("n2").value;
+			var add=+t1 + +t2;
+			document.getElementById("p1").innerHTML=add;
+		}
+		function myfun1()
+		{
+			var t1=document.getElementById("n1").value;
+			var t2=document.getElementById("n2").value;
+			var sub=t1-t2;
+			document.getElementById("p1").innerHTML=sub;	
+		}
+		function myfun2()
+		{
+			var t1=document.getElementById("n1").value;
+			var t2=document.getElementById("n2").value;
+			var mul=t1*t2;
+			document.getElementById("p1").innerHTML=mul;
+
+		}
+		function myfun3()
+		{
+			var t1=document.getElementById("n1").value;
+			var t2=document.getElementById("n2").value;
+			var divi=t1/t2;
+			document.getElementById("p1").innerHTML=divi;
+
+		}
+		function swap1() {
+			var t1=document.getElementById("n1").value;
+			var t2=document.getElementById("n2").value;
+			var temp=t1;
+			t1=t2;
+			t2=temp;
+			document.getElementById("n01").value=t1;
+			document.getElementById("n02").value=t2;
+		} 
+	</script>
+</head>
+<body style="background-color:powderblue";>
+	<center>
+	number1:<input type="number" id="n1"><br>
+	number2:<input type="number" id="n2"><br><br><br>
+	<button type="button" onclick="myfun()" ondblclick="myfun1()">+</button>
+	<button type="button" onclick="myfun1()">-</button>
+	<button type="button" onclick="myfun2()">*</button>	
+	<button type="button" onclick="myfun3()">/</button><br>
+	RESULT:<p id ="p1"> </p><br>
+	<button type="button" onclick="swap1()">SWAP</button><br>
+	<input type="number" id="n01"><br>
+	<input type="number" id="n02"><br>
+</center>	
+</body>
+</html>
